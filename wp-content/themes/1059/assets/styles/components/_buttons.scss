@@ -1,0 +1,27 @@
+.jssocials-share-link {
+   text-decoration: none;
+   &:hover {
+      text-decoration: none;
+   }
+}
+
+.btn {
+   cursor: pointer;
+}
+.social-link {
+	   display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 .5rem 0 0;
+    line-height: 36px;
+    background-color: $gray-700;
+    border-radius: 50%;
+    text-align: center;
+	img {
+		max-height: 24px;
+		max-width: 24px;
+		height: auto;
+		width: auto;
+		color: white !important;
+	}
+}

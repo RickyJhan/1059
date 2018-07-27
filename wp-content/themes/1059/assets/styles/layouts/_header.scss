@@ -1,0 +1,76 @@
+.banner {
+	z-index: 9;
+	position: relative;
+	background-color: $gray-700;
+	.navbar-brand {
+		height: 100px;
+		line-height: 100px;
+		padding: 0;
+		img {
+			max-height: 100%;
+		}
+	}
+	.secondary-nav {
+		padding-top: $spacer;
+		padding-bottom: $spacer;
+	}
+	.primary-nav {
+		padding-top: $spacer;
+		padding-bottom: $spacer;
+	}
+	.navbar {
+		padding: 0;
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					color: white;
+				}
+			}
+		}
+	}
+	.navbar-toggler {
+		height: $menu-height;
+		line-height: $menu-height;
+		padding: 0 .625rem;
+		position: absolute;
+		color: inherit;
+		border-bottom: 0;
+		background-color: transparent;
+		top: 0;
+		right: 0;
+		&.navbar-toggler-right {
+			right: 0;
+		}
+		.touch-button {
+			display: none;
+		}
+		&:focus, &:active {
+			box-shadow: none;
+			border: 0;
+			outline: 0;
+		}
+	}
+	.navbar-collapse {
+		justify-content: flex-end!important;
+	}
+	&.banner-sticky {
+		opacity: 0;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		position: fixed;
+		transition: all ease-in-out .6s;
+		box-shadow: 0 0 10px rgba(0,0,0,.1);
+		background-color: $gray-700;
+		&.sticked {
+			opacity: 1;
+			top: 0;
+			.navbar-brand {
+				height: $menu-height;
+				line-height: $menu-height;
+				padding: 0;
+			}
+
+		}
+	}
+}
